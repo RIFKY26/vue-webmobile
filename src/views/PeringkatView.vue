@@ -2,14 +2,14 @@
   <main>
     <div class="main-header">
       <h1>Peringkat</h1>
-      <span class="breadcrumb">PERINGKAT / PENGGUNA</span>
+      <span class="breadcrumb">ADOPSI / PENGISIAN FORMULIR</span>
     </div>
 
     <div class="leaderboard-top3">
       <div class="top-user-card">
         <div class="rank-badge silver">2</div>
         <img :src="topUsers[1].avatar" alt="Foto Pengguna">
-        <div class="stars">★★★★☆</div>
+        <div class="stars">★★★</div>
         <h3>{{ topUsers[1].nama }}</h3>
         <p>Total Points</p>
         <div class="total-points">{{ topUsers[1].totalPoin }}</div>
@@ -22,7 +22,7 @@
       <div class="top-user-card main">
         <div class="rank-badge gold">1</div>
         <img :src="topUsers[0].avatar" alt="Foto Pengguna">
-        <div class="stars">★★★★★</div>
+        <div class="stars">★★★</div>
         <h3>{{ topUsers[0].nama }}</h3>
         <p>Total Points</p>
         <div class="total-points">{{ topUsers[0].totalPoin }}</div>
@@ -35,7 +35,7 @@
       <div class="top-user-card">
          <div class="rank-badge bronze">3</div>
         <img :src="topUsers[2].avatar" alt="Foto Pengguna">
-        <div class="stars">★★★★☆</div>
+        <div class="stars">★★★</div>
         <h3>{{ topUsers[2].nama }}</h3>
         <p>Total Points</p>
         <div class="total-points">{{ topUsers[2].totalPoin }}</div>
@@ -69,7 +69,7 @@
             <td>{{ user.poinDonasi }}</td>
             <td class="total"><strong>{{ user.totalPoin }}</strong></td>
             <td>
-              <i class="fa-solid fa-ellipsis tindakan-btn" 
+              <i class="fa-solid fa-th tindakan-btn" 
                  @click="openModal(user.id, user.nama)">
               </i>
             </td>
