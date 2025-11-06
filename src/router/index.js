@@ -27,7 +27,8 @@ const router = createRouter({
       component: () => import('../views/PembayaranDonasiView.vue')
     },
     { path: '/peringkat', name: 'peringkat', component: () => import('../views/PeringkatView.vue') },
-    { path: '/rawat-kucing', name: 'rawat-kucing', component: () => import('../views/RawatKucingView.vue') }
+    { path: '/rawat-kucing', name: 'rawat-kucing', component: () => import('../views/RawatKucingView.vue') },
+    { path: '/profil', name: 'profil', component: () => import('../views/ProfilView.vue') }
   ]
 })
 
